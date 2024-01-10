@@ -1,0 +1,16 @@
+<h2 class="text-tangerine">{{ title }}</h2>
+<div class="grid grid-cols-12 gap-x-20 lg:gap-x-30 gap-y-30 lg:gap-y-40">
+  {{ team_member }}
+    <div class="col-span-full sm:col-span-6 md:col-span-4">
+      {{ partial:media/team_member_image :image="portrait" class="w-full mb-10 lg:mb-20" }}
+      <h3 class="text-tangerine">{{ firstname }} {{ lastname }}</h3>
+      <div>{{ position }}</div>
+      <a href="mailto:{{ email }}" 
+        class="hover:underline underline-offset-4"
+        target="_blank" 
+        title="E-Mail-Adresse von {{ firstname }} {{ lastname }}">
+        {{ email }}
+      </a>
+    </div>
+  {{ /team_member }}
+</div>

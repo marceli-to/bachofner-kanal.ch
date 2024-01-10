@@ -1,0 +1,11 @@
+h1, h2, h3 {
+  @apply font-syntaxblack uppercase
+}
+
+h1 {
+  @apply text-tangerine text-lg md:text-xl leading-[1.1] text-pretty mb-20 lg:mb-30
+}
+
+h2 {
+  @apply text-md md:text-lg leading-[1.2] mb-5 lg:mb-10
+}

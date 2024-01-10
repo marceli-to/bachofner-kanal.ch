@@ -1,0 +1,19 @@
+<header>
+  {{ partial:layout/container/standard class="z-50 flex justify-between items-start lg:items-center lg:h-140 !py-30" }}
+    {{ partial:menu/inline/wrapper class="hidden lg:block" }}
+    <a href="/" title="Startseite" class="block w-145 sm:w-180 h-auto">
+      {{ partial:icons/logo }}
+    </a>
+    <a 
+      href="javascript:;" 
+      x-on:click="menu = ! menu" 
+      title="Menü anzeigen"
+      class="text-tangerine w-30 lg:hidden">
+      {{ partial:icons/burger class="w-full h-auto" }}
+    </a>
+  {{ /partial:layout/container/standard }}
+  {{ partial:menu/overlay/wrapper }}
+</header>
+{{ if header_image }}
+  {{ partial:media/header_image :image="header_image" }}
+{{ /if }}

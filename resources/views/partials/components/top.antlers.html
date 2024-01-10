@@ -1,0 +1,17 @@
+<a 
+  x-data="{ isVisible: false }" 
+  x-init="window.addEventListener('scroll', () => { isVisible = (window.scrollY >= 300) })" 
+  x-cloak
+  href="#top" 
+  class="fixed bottom-40 lg:bottom-60 right-20 lg:right-60 z-50 transition-opacity {{ class }}" 
+  x-show="isVisible" 
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0">
+  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="block w-full h-auto">
+    <path d="M0 0V50H50V0H0Z" fill="#008135"/>
+    <path d="M12.3 31.4L25.0001 18.6L37.7001 31.4" stroke="white" stroke-width="5"/>
+  </svg>
+</a>
+

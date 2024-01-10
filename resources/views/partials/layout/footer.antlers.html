@@ -1,0 +1,77 @@
+<footer class="bg-tangerine text-white">
+  {{ partial:layout/container/standard class="py-25 lg:py-40" }}
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center xl:items-end gap-y-25 lg:gap-y-0 lg:gap-x-35 w-full">
+      <address class="not-italic xl:flex xl:justify-between xl:items-end xl:gap-x-35">
+        <div>
+          <strong>{{ contact_info:name }}</strong>
+          {{ if contact_info:address }}
+            <div>
+              {{ if contact_info:google_maps_url }}
+                <a href="{{ contact_info:google_maps_url }}" title="Standort auf Google Maps anzeigen" target="_blank" class="no-nderline hover:underline underline-offset-4 decoration-1">
+                  {{ contact_info:address | nl2br }}
+                </a>
+              {{ else }}
+                {{ contact_info:address | nl2br }}
+              {{ /if }}
+            </div>
+          {{ /if }}
+        </div>
+        <div>
+          <a href="tel:{{ contact_info:phone }}" title="Rufen Sie uns an" class="block no-nderline hover:underline underline-offset-4 decoration-1">{{ contact_info:phone }}</a>
+          <a href="mailto:{{ contact_info:email }}" title="E-Mail schreiben" class="block no-nderline hover:underline underline-offset-4 decoration-1">{{ contact_info:email }}</a>
+        </div>
+      </address>
+      <nav>
+        <ul class="flex gap-x-15 lg:gap-x-20">
+          {{ if social_media_accounts:publish }}
+            {{ if social_media_accounts:facebook }}
+              <li>
+                <a href="{{ social_media_accounts:facebook }}" title="Besuchen Sie unsere Facebook-Seite" target="_blank" class="group block size-32 lg:size-40 transition-transform hover:rotate-12">
+                  {{ partial:icons/facebook class="block w-full h-auto" }}
+                </a>
+              </li>
+            {{ /if }}
+            <li>
+              <a href="tel:{{ contact_info:phone }}" title="Rufen Sie uns an" class="group block size-32 lg:size-40 transition-transform hover:rotate-12">
+                {{ partial:icons/phone class="block w-full h-auto" }}
+              </a>
+              <li>
+                <a href="mailto:{{ contact_info:email }}" title="E-Mail schreiben" class="group block size-32 lg:size-40 transition-transform hover:rotate-12">
+                  {{ partial:icons/mail class="block w-full h-auto" }}
+                </a>
+              </li>
+            </li>
+          {{ /if }}
+        </ul>
+      </nav>
+      <nav class="lg:flex lg:justify-between lg:gap-x-35">
+        <ul>
+          <li>
+            <a href="/impressum" title="Impressum" class="no-underline hover:underline underline-offset-4 decoration-1">
+              Impressum
+            </a>
+          </li>
+          <li>
+            <a href="https://stoz.ch" title="Webseite stoz.ch" target="_blank" class="no-underline hover:underline underline-offset-4 decoration-1">
+              Design by stoz
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/agb" title="Allgemeine Geschäftsbedingungen" class="no-nderline hover:underline underline-offset-4 decoration-1">
+              AGB
+            </a>
+          </li>
+          <li>
+            <a href="/datenschutz" title="Datenschutz" class="no-nderline hover:underline underline-offset-4 decoration-1">
+              Datenschutz
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  {{ /partial:layout/container/standard }}
+</footer>
+{{ partial:components/top class="block w-40 h-auto" }}
+

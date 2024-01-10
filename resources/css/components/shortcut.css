@@ -1,0 +1,7 @@
+.shortcut.has-touch h2 {
+  @apply opacity-0
+}
+
+.shortcut.has-touch img {
+  @apply opacity-100
+}

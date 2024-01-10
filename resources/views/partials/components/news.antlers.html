@@ -1,0 +1,11 @@
+{{ partial:layout/container/standard class="mt-30 lg:mt-40 pb-30 lg:pb-40" }}
+  {{ partial:layout/container/narrow }}
+  <h2 class="text-white mb-20 lg:mb-30">
+    {{ title }}
+  </h2>
+  <div class="text-white [&>p>a]:underline [&>p>a]:underline-offset-4">
+    {{ text }}
+  </div>
+  {{ partial:media/news_image :image="image" :imageClass="'mt-20 aspect-[16/8] w-full h-auto object-cover'" }}
+  {{ /partial:layout/container/narrow }}
+{{ /partial:layout/container/standard }}

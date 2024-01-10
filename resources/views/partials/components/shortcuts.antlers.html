@@ -1,0 +1,31 @@
+<div class="grid grid-cols-12 gap-20 lg:gap-30">
+{{ shortcut }}
+<div 
+  class="shortcut col-span-6 sm:col-span-3 rounded-full group" 
+  data-shortcut 
+  x-data="{ hasTouch: false }"
+  x-init="() => {
+    const shortcut = document.querySelector('[data-shortcut]');
+    shortcut.addEventListener('touchstart', () => {
+      shortcut.classList.add('has-touch');
+    });
+    shortcut.addEventListener('touchend', () => {
+      shortcut.classList.remove('has-touch');
+    });
+  }"
+  :class="{ 'has-touch': hasTouch }"
+>
+  <a 
+    href="{{ url }}" 
+    title="{{ title }}" 
+    class="bg-tangerine rounded-full aspect-square w-full flex items-center justify-center relative group-hover:bg-white transition-colors"
+  >
+    <h2 class="text-white hyphens-auto text-center leading-[1.1] !mb-0 p-10 lg:p-20 group-hover:opacity-0">
+      {{ title }}
+    </h2>
+    {{ partial:media/shortcut_image :image="image" class="opacity-0 group-hover:opacity-100 transition-opacity absolute top-0 left-0" }}
+  </a>
+</div>
+{{ /shortcut }}
+</div>
+

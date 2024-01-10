@@ -1,0 +1,35 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-3677a380.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/fonts/SyntaxProBlack/font.woff": {
+    "file": "assets/font-79bc8a53.woff",
+    "src": "resources/css/fonts/SyntaxProBlack/font.woff"
+  },
+  "resources/css/fonts/SyntaxProBlack/font.woff2": {
+    "file": "assets/font-d0c15bb6.woff2",
+    "src": "resources/css/fonts/SyntaxProBlack/font.woff2"
+  },
+  "resources/css/fonts/SyntaxProRoman/font.woff": {
+    "file": "assets/font-8957c5fc.woff",
+    "src": "resources/css/fonts/SyntaxProRoman/font.woff"
+  },
+  "resources/css/fonts/SyntaxProRoman/font.woff2": {
+    "file": "assets/font-6c196829.woff2",
+    "src": "resources/css/fonts/SyntaxProRoman/font.woff2"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-a5f73305.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-a5f73305.css"
+    ],
+    "file": "assets/app-5bc81a64.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

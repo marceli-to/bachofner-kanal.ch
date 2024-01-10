@@ -1,0 +1,16 @@
+{{ page_elements }}
+{{ partial:components/elements }}
+{{ /page_elements }}
+
+
+{{ if is_homepage }}
+  {{ collection:news as="entries" }}
+    {{ if entries | count > 0 }}
+      <section class="bg-jungle">
+        {{ entries }}
+          {{ partial:components/news  }}
+        {{ /entries }}
+      </section>
+    {{ /if }}
+  {{ /collection:news }}
+{{ /if }}

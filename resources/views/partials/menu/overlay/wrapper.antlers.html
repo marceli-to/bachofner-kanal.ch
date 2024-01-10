@@ -1,0 +1,24 @@
+<div x-cloak x-show="menu" class="lg:hidden">
+  <div class="fixed right-0 top-0 w-[70%] sm:w-[40%] h-full z-50 flex flex-col items-end justify-center bg-tangerine"
+    x-show="menu"
+    x-transition:enter="transition ease-out duration-240"
+    x-transition:enter-start="translate-x-full"
+    x-transition:enter-end="translate-x-0"
+    x-transition:leave="transition ease-in duration-240"
+    x-transition:leave-start="translate-x-0"
+    x-transition:leave-end="translate-x-full">
+    <a href="javascript:;" 
+      class="block absolute right-20 top-28 z-50 w-30"
+      x-on:click="menu = ! menu" 
+      title="Menü schliessen">
+      {{ partial:icons/cross class="w-full h-auto" }}
+    </a>
+    <nav class="text-md">
+      <ul class="leading-none">
+        {{ nav:main }}
+          {{ partial:menu/overlay/item }}
+        {{ /nav:main }}
+      </ul>
+    </nav>
+  </div>
+</div>

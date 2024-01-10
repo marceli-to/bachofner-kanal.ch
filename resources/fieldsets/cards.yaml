@@ -1,0 +1,30 @@
+title: 'Kacheln (Bild/Text)'
+fields:
+  -
+    handle: card
+    field:
+      collapse: false
+      previews: true
+      fullscreen: true
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          instructions: null
+          icon: null
+          sets:
+            card:
+              display: Kachel
+              instructions: null
+              icon: text-formatting-image-left
+              fields:
+                -
+                  import: card
+      type: replicator
+      display: Kachel
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      instructions: 'Kachel mit und Text hinzufügen'

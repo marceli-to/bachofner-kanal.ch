@@ -1,0 +1,28 @@
+{{ if type == 'text' }}
+  {{ partial:layout/container/standard }}
+      {{ partial:layout/container/narrow }}
+        {{ text }}
+      {{ /partial:layout/container/narrow }}
+  {{ /partial:layout/container/standard }}
+{{ /if }}
+
+{{ if type == 'cards' }}
+{{ partial:layout/container/wide }}
+  {{ card }}
+    {{ partial:components/grid_card }}
+  {{ /card }}
+{{ /partial:layout/container/wide }}
+{{ /if }}
+
+{{ if type == 'shortcuts' }}
+{{ partial:layout/container/standard }}
+  {{ partial:components/shortcuts }}
+{{ /partial:layout/container/standard }}
+{{ /if }}
+
+{{ if type == 'team' }}
+{{ partial:layout/container/standard }}
+  {{ partial:components/team }}
+{{ /partial:layout/container/standard }}
+{{ /if }}
+
