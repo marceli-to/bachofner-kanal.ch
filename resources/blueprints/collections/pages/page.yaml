@@ -61,6 +61,13 @@ tabs:
                       fields:
                         -
                           import: team
+                    history:
+                      display: Geschichte
+                      instructions: null
+                      icon: calendar-date
+                      fields:
+                        -
+                          import: history
               type: replicator
               display: Inhalte
               icon: replicator

@@ -18,7 +18,7 @@ return [
             'name' => 'Lead',
             'ident' => 'L',
             'icon' => null,
-            'class' => 'text-base md:text-md text-tangerine !mb-0',
+            'class' => 'text-base md:text-md text-tangerine !mb-0 leading-[1.15]',
             'cp_css' => 'font-size: 1rem; font-weight: 400; color: #EC6500',
             'cp_badge' => false,
         ],

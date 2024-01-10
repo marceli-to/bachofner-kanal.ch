@@ -26,3 +26,11 @@
 {{ /partial:layout/container/standard }}
 {{ /if }}
 
+{{ if type == 'history' }}
+  {{ partial:layout/container/standard }}
+      {{ partial:layout/container/narrow }}
+        {{ partial:components/history/index }}
+      {{ /partial:layout/container/narrow }}
+  {{ /partial:layout/container/standard }}
+{{ /if }}
+
