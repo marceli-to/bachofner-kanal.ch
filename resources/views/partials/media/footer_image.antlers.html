@@ -1,4 +1,4 @@
-<figure class="relative">
+<figure>
   <picture>
     <source media="(min-width: 1280px)" srcset="{{ glide:image preset='visual-2xl-webp' }}" type="image/webp">
     <source media="(min-width: 1024px)" srcset="{{ glide:image preset='visual-lg-webp' }}" type="image/webp">
@@ -16,10 +16,4 @@
       class="block w-full object-cover aspect-[16/8] md:aspect-[16/7] xl:aspect-[16/6] {{ imageClass ?? '' }}"
       loading="lazy">
   </picture>
-  {{ if is_homepage }}
-    <a href="" title="Jobs">
-      {{ partial:icons/jobs class="absolute z-50 left-20 sm:left-20 lg:left-45 xl:left-85 2xl:left-100 bottom-30 sm:bottom-50 lg:bottom-50 xl:bottom-75 2xl:bottom-75 h-auto w-95 sm:w-125 lg:w-125 xl:w-160 2xl:w-200" }}
-    </a>
-  {{ /if }}
-  <img src="/img/ring-tangerine.svg" alt="" class="hidden lg:block absolute w-160 xl:w-230 2xl:w-[280px] h-auto z-40 -bottom-30 xl:-bottom-50 2xl:-bottom-70">
 </figure>

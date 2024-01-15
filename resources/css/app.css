@@ -5,6 +5,7 @@
 @import "typo/webfonts.css";
 @import "components/headings.css";
 @import "components/shortcut.css";
+@import "components/collapsible.css";
 @import "utils.css";
 
 * {
@@ -24,4 +25,32 @@ b, strong {
 
 main p:not(:last-of-type) {
   @apply mb-20
+}
+
+.theme-box-tangerine li,
+.theme-box-white li {
+  @apply list-item list-outside py-2 mb-3 ml-14 leading-[1.4]
+}
+
+.collapsible ul {
+  @apply mb-20
+}
+
+.collapsible li {
+  @apply list-item list-outside py-2 mb-3 ml-14 leading-[1.4]
+}
+
+.collapsible li p,
+.theme-box-tangerine li p,
+.theme-box-white li p {
+  @apply inline
+}
+
+.theme-box-tangerine li {
+  @apply list-image-white
+}
+
+.collapsible li,
+.theme-box-white li {
+  @apply list-image-tangerine
 }

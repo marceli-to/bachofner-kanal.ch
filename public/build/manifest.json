@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-7e23532f.css",
+    "file": "assets/app-1fbea12c.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -19,6 +19,14 @@
   "resources/css/fonts/SyntaxProRoman/font.woff2": {
     "file": "assets/font-6c196829.woff2",
     "src": "resources/css/fonts/SyntaxProRoman/font.woff2"
+  },
+  "resources/img/bullet-tangerine.svg": {
+    "file": "assets/bullet-tangerine-e8103e27.svg",
+    "src": "resources/img/bullet-tangerine.svg"
+  },
+  "resources/img/bullet-white.svg": {
+    "file": "assets/bullet-white-e7bc295e.svg",
+    "src": "resources/img/bullet-white.svg"
   },
   "resources/js/app.css": {
     "file": "assets/app-a5f73305.css",

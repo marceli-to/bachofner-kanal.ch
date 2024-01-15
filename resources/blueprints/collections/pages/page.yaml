@@ -68,6 +68,20 @@ tabs:
                       fields:
                         -
                           import: history
+                    box:
+                      display: Textbox
+                      instructions: null
+                      icon: align-object-top
+                      fields:
+                        -
+                          import: box
+                    collapsibles:
+                      display: Aufklappliste
+                      instructions: null
+                      icon: form-drop-down-menu
+                      fields:
+                        -
+                          import: collapsibles
               type: replicator
               display: Inhalte
               icon: replicator
@@ -94,6 +108,24 @@ tabs:
               show_set_alt: true
               type: assets
               display: Headerbild
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: footer_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Footerbild
               icon: assets
               listable: hidden
               instructions_position: above

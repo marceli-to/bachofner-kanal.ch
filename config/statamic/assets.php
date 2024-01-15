@@ -128,17 +128,17 @@ return [
           'team-sm' => ['w' => 480, 'h' => 480, 'q' => 90, 'fit' => 'crop_focal'],
           'team-md' => ['w' => 768, 'h' => 768, 'q' => 90, 'fit' => 'crop_focal'],
 
-          // Header images
-          'header-sm-webp' => ['w' => 900, 'h' => 506, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
-          'header-md-webp' => ['w' => 1000, 'h' => 438, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
-          'header-lg-webp' => ['w' => 1280, 'h' => 560, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
-          'header-xl-webp' => ['w' => 1440, 'h' => 540, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
-          'header-2xl-webp' => ['w' => 1600, 'h' => 600, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
-          'header-sm' => ['w' => 900, 'h' => 506, 'q' => 90, 'fit' => 'crop_focal'],
-          'header-md' => ['w' => 1000, 'h' => 438, 'q' => 90, 'fit' => 'crop_focal'],
-          'header-lg' => ['w' => 1280, 'h' => 560, 'q' => 90, 'fit' => 'crop_focal'],
-          'header-xl' => ['w' => 1440, 'h' => 540, 'q' => 90, 'fit' => 'crop_focal'],
-          'header-2xl' => ['w' => 1600, 'h' => 600, 'q' => 90, 'fit' => 'crop_focal'],
+          // Visual (header, footer) images
+          'visual-sm-webp' => ['w' => 900, 'h' => 506, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'visual-md-webp' => ['w' => 1000, 'h' => 438, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'visual-lg-webp' => ['w' => 1280, 'h' => 560, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'visual-xl-webp' => ['w' => 1440, 'h' => 540, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'visual-2xl-webp' => ['w' => 1600, 'h' => 600, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
+          'visual-sm' => ['w' => 900, 'h' => 506, 'q' => 90, 'fit' => 'crop_focal'],
+          'visual-md' => ['w' => 1000, 'h' => 438, 'q' => 90, 'fit' => 'crop_focal'],
+          'visual-lg' => ['w' => 1280, 'h' => 560, 'q' => 90, 'fit' => 'crop_focal'],
+          'visual-xl' => ['w' => 1440, 'h' => 540, 'q' => 90, 'fit' => 'crop_focal'],
+          'visual-2xl' => ['w' => 1600, 'h' => 600, 'q' => 90, 'fit' => 'crop_focal'],
           
           'max_upload_size' => ['w' => 2000, 'h' => 2000, 'fit' => 'max'],
         ],

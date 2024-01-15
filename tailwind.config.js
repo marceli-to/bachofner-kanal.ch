@@ -49,7 +49,13 @@ export default {
 
       backgroundImage: {
         'ring-tangerine': "url(img/ring-tangerine.svg)",
-      }
+        // 'bullet-tangerine': "url(img/bullet-tangerine.svg)",
+      },
+
+      listStyleImage: {
+        tangerine: 'url(img/bullet-tangerine.svg)',
+        white: 'url(img/bullet-white.svg)',
+      },
       
     },
 

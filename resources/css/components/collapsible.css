@@ -1,0 +1,31 @@
+::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  @apply outline-none
+}
+
+details .open {
+  @apply hidden
+}
+
+details[open] .close {
+  @apply hidden
+}
+
+details[open] .open {
+  @apply block
+}
+
+details h3 {
+  @apply normal-case
+}
+
+details a {
+  @apply underline underline-offset-4 decoration-1
+}
+
+details a:hover {
+  @apply no-underline
+}

@@ -34,3 +34,14 @@
   {{ /partial:layout/container/standard }}
 {{ /if }}
 
+{{ if type == 'box' }}
+{{ partial:layout/container/standard }}
+  {{ partial:components/textbox }}
+{{ /partial:layout/container/standard }}
+{{ /if }}
+
+{{ if type == 'collapsibles' }}
+{{ partial:layout/container/standard }}
+  {{ partial:components/collapsibles }}
+{{ /partial:layout/container/standard }}
+{{ /if }}

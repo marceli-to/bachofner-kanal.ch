@@ -1,0 +1,13 @@
+{{ collapsible }}
+  {{ partial:components/collapsible :id="id" }}
+      
+  {{ slot:header }}
+    <h2 class="text-white leading-none mb-0">{{ title }}</h2>
+  {{ /slot:header}}
+
+  {{ slot:content }}
+    {{ text }}
+  {{ /slot:content }}
+
+  {{ /partial:components/collapsible}}
+{{ /collapsible }}
