@@ -35,5 +35,5 @@ textarea {
 }
 
 .checkboxes input[type=checkbox] {
-  @apply mr-15 -mt-2 w-20 h-20 ring-0 focus:ring-0 !ring-offset-0 !outline-none !border-none text-tangerine bg-tangerine accent-tangerine
+  @apply mr-15 -mt-3 w-20 h-20 ring-0 focus:ring-0 !ring-offset-0 !outline-none !border-none text-tangerine bg-tangerine accent-tangerine
 }
