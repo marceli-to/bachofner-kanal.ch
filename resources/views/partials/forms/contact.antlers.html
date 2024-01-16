@@ -1,0 +1,26 @@
+<h2 class="text-tangerine">Kontaktformular</h2>
+<p>Bitte füllen Sie alle Felder mit einem * aus.</p>
+{{ form:contact_form class="mt-15 lg:mt-20" }}
+
+  {{ if errors }}
+    {{ partial:forms/elements/errors }}
+  {{ /if }}
+
+  {{ if success }}
+    {{ partial:forms/elements/success }}
+      Vielen Dank für Ihre Anfrage.
+    {{ /partial:forms/elements/success }}
+  {{ /if }}
+
+  {{ partial:forms/elements/group }}
+    <input type="text" name="webs1te" class="hidden" />
+    {{ partial:forms/elements/input type="text" placeholder="Vorname*" fieldname="firstname" :old="old:firstname" }}
+    {{ partial:forms/elements/input type="text" placeholder="Name*" fieldname="lastname" :old="old:lastname" }}
+    {{ partial:forms/elements/input type="text" placeholder="Strasse/Nr." fieldname="street" :old="old:street" }}
+    {{ partial:forms/elements/input type="text" placeholder="PLZ/Ort" fieldname="zip_city" :old="old:zip_city" }}
+    {{ partial:forms/elements/input type="tel" placeholder="Telefon" fieldname="phone" :old="old:phone" }}
+    {{ partial:forms/elements/input type="email" placeholder="E-Mail*" fieldname="email" :old="old:email" }}
+    {{ partial:forms/elements/textarea placeholder="Nachricht" fieldname="remarks" :old="old:remarks" }}
+    {{ partial:forms/elements/button label="Abschicken" }}
+  {{ /partial:forms/elements/group}}
+{{ /form:contact_form }}

@@ -4,8 +4,8 @@ email:
   -
     id: lptkqymo
     to: m@marceli.to
-    from: noreply@mihmfoundation.org
-    reply_to: noreply@mihmfoundation.org
-    subject: 'Kontaktformular mihmfoundation.org'
+    from: noreply@bachofner-kanal.ch
+    reply_to: noreply@bachofner-kanal.ch
+    subject: 'Kontaktformular bachofner-kanal.ch'
     html: templates/email/html/contact
     text: templates/email/text/contact

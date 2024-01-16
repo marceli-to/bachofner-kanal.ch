@@ -5,20 +5,25 @@ tabs:
       -
         fields:
           -
-            handle: organisation
+            handle: subject
             field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Organisation
-              icon: text
+              options:
+                service: Serviceanfrage
+              taggable: false
+              push_tags: false
+              multiple: false
+              max_items: 1
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Betreff
+              icon: select
               listable: hidden
               instructions_position: above
               visibility: visible
               replicator_preview: true
               hide_display: false
-              validate:
-                - required
           -
             handle: firstname
             field:
@@ -50,6 +55,45 @@ tabs:
               validate:
                 - required
           -
+            handle: street
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Strasse/Nr.
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: zip_city
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'PLZ / Ort'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: phone
+            field:
+              input_type: tel
+              antlers: false
+              type: text
+              display: Telefon
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: email
             field:
               input_type: email
@@ -66,24 +110,11 @@ tabs:
                 - required
                 - email
           -
-            handle: phone
-            field:
-              input_type: tel
-              antlers: false
-              type: text
-              display: Telefon
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
             handle: remarks
             field:
               antlers: false
               type: textarea
-              display: Bemerkungen
+              display: Nachricht
               icon: textarea
               listable: hidden
               instructions_position: above

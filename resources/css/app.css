@@ -4,6 +4,7 @@
 
 @import "typo/webfonts.css";
 @import "components/headings.css";
+@import "components/forms.css";
 @import "components/shortcut.css";
 @import "components/collapsible.css";
 @import "utils.css";
@@ -24,7 +25,7 @@ b, strong {
 }
 
 main p:not(:last-of-type) {
-  @apply mb-20
+  @apply mb-20 lg:mb-30
 }
 
 .theme-box-tangerine li,
