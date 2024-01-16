@@ -6,10 +6,10 @@ select {
   @apply w-full py-15 px-10 bg-tangerine text-white border-none !ring-0 focus:outline-none focus:!ring-0 focus:text-white !shadow-none placeholder:text-white leading-none placeholder:leading-none
 }
 
-/* select {
-  @apply bg-right-center bg-dropdown bg-no-repeat accent-white mt-5 lg:mt-10
+select {
+  @apply bg-right-center bg-tangerine appearance-none bg-dropdown bg-no-repeat accent-transparent mt-5 lg:mt-10
 }
-*/
+
 
 textarea {
   @apply min-h-[120px] lg:min-h-[240px];

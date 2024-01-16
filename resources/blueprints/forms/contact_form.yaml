@@ -9,12 +9,13 @@ tabs:
             field:
               options:
                 service: Serviceanfrage
+                reparatur: Reparatur
               taggable: false
               push_tags: false
               multiple: false
               max_items: 1
               clearable: false
-              searchable: true
+              searchable: false
               cast_booleans: false
               type: select
               display: Betreff
@@ -24,6 +25,8 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              placeholder: 'Bitte wählen...'
+              default: service
           -
             handle: firstname
             field:
@@ -39,6 +42,7 @@ tabs:
               hide_display: false
               validate:
                 - required
+              placeholder: Vorname
           -
             handle: name
             field:
@@ -54,6 +58,7 @@ tabs:
               hide_display: false
               validate:
                 - required
+              placeholder: Name
           -
             handle: street
             field:
@@ -67,6 +72,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              placeholder: 'Strasse / Nr.'
           -
             handle: zip_city
             field:
@@ -80,6 +86,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              placeholder: 'PLZ / Ort'
           -
             handle: phone
             field:
@@ -93,6 +100,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              placeholder: Telefon
           -
             handle: email
             field:
@@ -109,6 +117,7 @@ tabs:
               validate:
                 - required
                 - email
+              placeholder: E-Mail
           -
             handle: remarks
             field:
@@ -121,3 +130,4 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              placeholder: Nachricht
