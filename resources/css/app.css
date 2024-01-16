@@ -55,3 +55,12 @@ main p:not(:last-of-type) {
 .theme-box-white li {
   @apply list-image-tangerine
 }
+
+.marker {
+  @apply bg-marker;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 50px;
+  width: 40px;
+}

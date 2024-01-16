@@ -48,12 +48,12 @@ export default {
       },
 
       backgroundImage: {
-        'ring-tangerine': "url(img/ring-tangerine.svg)",
-        'dropdown': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")",
+        'marker': "url('../img/marker.svg')",
+        'dropdown': "url(\"data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.7 1.84095L9.20001 9.39999L1.70001 1.84095' stroke='white' stroke-width='3'/%3E%3C/svg%3E\")",
       },
 
       backgroundPosition: {
-        'right-center': 'right center',
+        'right-center': 'right 10px center',
       },
 
       listStyleImage: {

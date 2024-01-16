@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-f5067962.css",
+    "file": "assets/app-e54f9605.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -28,15 +28,12 @@
     "file": "assets/bullet-white-e7bc295e.svg",
     "src": "resources/img/bullet-white.svg"
   },
-  "resources/js/app.css": {
-    "file": "assets/app-a5f73305.css",
-    "src": "resources/js/app.css"
+  "resources/img/marker.svg": {
+    "file": "assets/marker-40ce2f7e.svg",
+    "src": "resources/img/marker.svg"
   },
   "resources/js/app.js": {
-    "css": [
-      "assets/app-a5f73305.css"
-    ],
-    "file": "assets/app-5bc81a64.js",
+    "file": "assets/app-47f30dac.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

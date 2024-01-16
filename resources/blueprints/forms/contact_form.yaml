@@ -8,8 +8,8 @@ tabs:
             handle: subject
             field:
               options:
-                service: Serviceanfrage
-                reparatur: Reparatur
+                Serviceanfrage: Serviceanfrage
+                Reparatur: Reparatur
               taggable: false
               push_tags: false
               multiple: false
@@ -42,7 +42,7 @@ tabs:
               hide_display: false
               validate:
                 - required
-              placeholder: Vorname
+              placeholder: 'Vorname*'
           -
             handle: name
             field:
@@ -58,7 +58,7 @@ tabs:
               hide_display: false
               validate:
                 - required
-              placeholder: Name
+              placeholder: 'Name*'
           -
             handle: street
             field:
@@ -117,7 +117,7 @@ tabs:
               validate:
                 - required
                 - email
-              placeholder: E-Mail
+              placeholder: 'E-Mail*'
           -
             handle: remarks
             field:
@@ -131,3 +131,18 @@ tabs:
               replicator_preview: true
               hide_display: false
               placeholder: Nachricht
+          -
+            handle: privacy
+            field:
+              inline_label: 'Ich habe die Datenschutzerklärung gelesen und akzeptiere diese.'
+              default: false
+              type: toggle
+              display: Datenschutz
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - accepted

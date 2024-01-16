@@ -1,0 +1,9 @@
+subject: Serviceanfrage
+firstname: Marcel
+name: Stadelmann
+street: 'Letzi 149'
+zip_city: '8047 Zürich'
+phone: '078 749 74 09'
+email: m@marceli.to
+remarks: test
+privacy: true

@@ -1,15 +1,19 @@
 {{ if type == 'select' }}
   <div class="md:col-span-full md:grid md:grid-cols-12 md:gap-x-20 lg:gap-x-30 md:gap-y-10 lg:gap-y-20 {{ class }}">
-    <div class="md:col-span-6">
+    <div class="md:col-span-6 {{ if error }} has-error {{ /if }}">
       {{ field }}
     </div>
   </div>
 {{ elseif type == 'textarea' }}
-  <div class="md:col-span-full {{ class }}">
+  <div class="md:col-span-full {{ class }} {{ if error }} has-error {{ /if }}">
+    {{ field }}
+  </div>
+{{ elseif type == 'toggle'}}
+  <div class="md:col-span-full checkboxes mt-5 mb-15 {{ class }} {{ if error }} has-error {{ /if }}">
     {{ field }}
   </div>
 {{ else }}
-  <div class="md:col-span-6 {{ class }}">
+  <div class="md:col-span-6 {{ class }} {{ if error }} has-error {{ /if }}">
   {{ field }}
   </div>
 {{ /if }}
