@@ -1,10 +1,13 @@
-<details class="collapsible w-full mb-20 lg:mb-40 last-of-type:mb-0 {{ class }}" data-collapsible-item="{{ id }}">
+<details 
+  class="collapsible w-full mb-20 lg:mb-40 last-of-type:mb-0 scroll-mt-20 {{ class }}" 
+  data-collapsible-item="{{ id }}"
+  data-collapsible-slug="{{ title | strip_tags | slugify }}">
   <summary class="bg-tangerine  flex items-center w-full leading-none justify-between cursor-pointer group px-10 pt-10 pb-8 lg:px-30 lg:pt-20 lg:pb-16">
     <div class="select-none text-left leading-none">
       {{ slot:header }}
     </div>
-    {{ partial:icons/chevron-down class="close lg:w-30 h-auto shrink-0" }}
-    {{ partial:icons/chevron-up class="open lg:w-30 h-auto shrink-0" }}
+    {{ partial:icons/chevron-down class="close w-24 lg:w-30 h-auto shrink-0" }}
+    {{ partial:icons/chevron-up class="open w-24 lg:w-30 h-auto shrink-0" }}
   </summary>
   <div class="lg:px-30 lg:py-30 border-l border-r border-b border-tangerine {{ innerClass }}">
     {{ slot:content }}
