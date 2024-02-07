@@ -106,6 +106,7 @@ fields:
                     visibility: visible
                     replicator_preview: true
                     hide_display: false
+                    folder: team
       type: replicator
       display: Teammitglied
       icon: replicator

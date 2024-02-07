@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-ac4d36ad.css",
+    "file": "assets/app-1eb4d7c0.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -21,11 +21,11 @@
     "src": "resources/css/fonts/SyntaxProRoman/font.woff2"
   },
   "resources/img/bullet-tangerine.svg": {
-    "file": "assets/bullet-tangerine-e8103e27.svg",
+    "file": "assets/bullet-tangerine-78a8714d.svg",
     "src": "resources/img/bullet-tangerine.svg"
   },
   "resources/img/bullet-white.svg": {
-    "file": "assets/bullet-white-e7bc295e.svg",
+    "file": "assets/bullet-white-436a2b48.svg",
     "src": "resources/img/bullet-white.svg"
   },
   "resources/img/marker.svg": {

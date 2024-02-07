@@ -28,9 +28,21 @@ main p:not(:last-of-type) {
   @apply mb-20 lg:mb-30
 }
 
-.theme-box-tangerine li,
-.theme-box-white li {
-  @apply list-item list-outside py-2 mb-3 ml-14 leading-[1.4]
+main .content a {
+  @apply hover:underline underline-offset-4
+}
+
+main .content p + ul {
+  @apply mt-20 lg:mt-30
+}
+
+main .content ul {
+  @apply mb-20
+}
+
+main .content li:not(.theme-box-tangerine li),
+main .content li:not(.theme-box-white li) {
+  @apply list-image-tangerine list-item list-outside py-2 pl-6 mb-3 ml-18 leading-[1.4]
 }
 
 .collapsible ul {
@@ -41,6 +53,7 @@ main p:not(:last-of-type) {
   @apply list-item list-outside py-2 mb-3 ml-14 leading-[1.4]
 }
 
+main .content li p,
 .collapsible li p,
 .theme-box-tangerine li p,
 .theme-box-white li p {
@@ -48,12 +61,12 @@ main p:not(:last-of-type) {
 }
 
 .theme-box-tangerine li {
-  @apply list-image-white
+  @apply !list-image-white
 }
 
 .collapsible li,
 .theme-box-white li {
-  @apply list-image-tangerine
+  @apply !list-image-tangerine
 }
 
 .marker {
