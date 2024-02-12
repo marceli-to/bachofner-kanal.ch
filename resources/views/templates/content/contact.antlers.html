@@ -8,15 +8,15 @@
       <h3>{{ contact_info:name }}</h3>
       <p>
         {{ if contact_info:google_maps_url }}
-          <a href="{{ contact_info:google_maps_url }}" title="Standort auf Google Maps anzeigen" target="_blank" class="no-nderline hover:underline underline-offset-4 decoration-1">
+          <a href="{{ contact_info:google_maps_url }}" title="Standort auf Google Maps anzeigen" target="_blank" class="no-underline hover:underline underline-offset-4 decoration-1">
             {{ contact_info:address | nl2br }}
           </a>
         {{ else }}
           {{ contact_info:address | nl2br }}
         {{ /if }}
         <br>
-        <a href="tel:{{ contact_info:phone }}" title="Rufen Sie uns an" class="block no-nderline hover:underline underline-offset-4 decoration-1">{{ contact_info:phone }}</a>
-        <a href="mailto:{{ contact_info:email }}" title="E-Mail schreiben" class="block no-nderline hover:underline underline-offset-4 decoration-1">{{ contact_info:email }}</a>
+        <a href="tel:{{ contact_info:phone }}" title="Rufen Sie uns an" class="block no-underline hover:underline underline-offset-4 decoration-1">{{ contact_info:phone }}</a>
+        <a href="mailto:{{ contact_info:email }}" title="E-Mail schreiben" class="block no-underline hover:underline underline-offset-4 decoration-1">{{ contact_info:email }}</a>
       </p>
       <h3>Montag bis Donnerstag</h3>
       <p>
@@ -30,7 +30,7 @@
       </p>
       <h3>24/7 Notfall</h3>
       <p>
-        <a href="tel:{{ contact_info:emergency_phone }}" title="Rufen Sie uns an" class="block no-nderline hover:underline underline-offset-4 decoration-1">{{ contact_info:emergency_phone }}</a>
+        <a href="tel:{{ contact_info:emergency_phone }}" title="Rufen Sie uns an" class="block no-underline hover:underline underline-offset-4 decoration-1">{{ contact_info:emergency_phone }}</a>
       </p>
     </div>
     <div class="mt-20 md:mt-0 md:col-span-7">

@@ -7,7 +7,7 @@
           {{ if contact_info:address }}
             <div>
               {{ if contact_info:google_maps_url }}
-                <a href="{{ contact_info:google_maps_url }}" title="Standort auf Google Maps anzeigen" target="_blank" class="no-nderline hover:underline underline-offset-4 decoration-1">
+                <a href="{{ contact_info:google_maps_url }}" title="Standort auf Google Maps anzeigen" target="_blank" class="no-underline hover:underline underline-offset-4 decoration-1">
                   {{ contact_info:address | nl2br }}
                 </a>
               {{ else }}
@@ -17,8 +17,8 @@
           {{ /if }}
         </div>
         <div>
-          <a href="tel:{{ contact_info:phone }}" title="Rufen Sie uns an" class="block no-nderline hover:underline underline-offset-4 decoration-1">{{ contact_info:phone }}</a>
-          <a href="mailto:{{ contact_info:email }}" title="E-Mail schreiben" class="block no-nderline hover:underline underline-offset-4 decoration-1">{{ contact_info:email }}</a>
+          <a href="tel:{{ contact_info:phone }}" title="Rufen Sie uns an" class="block no-underline hover:underline underline-offset-4 decoration-1">{{ contact_info:phone }}</a>
+          <a href="mailto:{{ contact_info:email }}" title="E-Mail schreiben" class="block no-underline hover:underline underline-offset-4 decoration-1">{{ contact_info:email }}</a>
         </div>
       </address>
       <nav>
@@ -52,14 +52,14 @@
             </a>
           </li>
           <li>
-            <a href="/assets/downloads/bachofner-kanal-agb.pdf" target="_blank" title="Allgemeine Geschäftsbedingungen" class="no-nderline hover:underline underline-offset-4 decoration-1">
+            <a href="/assets/downloads/bachofner-kanal-agb.pdf" target="_blank" title="Allgemeine Geschäftsbedingungen" class="no-underline hover:underline underline-offset-4 decoration-1">
               AGB
             </a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="/datenschutzerklaerung" title="Datenschutzerklärung" class="no-nderline hover:underline underline-offset-4 decoration-1">
+            <a href="/datenschutzerklaerung" title="Datenschutzerklärung" class="no-underline hover:underline underline-offset-4 decoration-1">
               Datenschutz
             </a>
           </li>
