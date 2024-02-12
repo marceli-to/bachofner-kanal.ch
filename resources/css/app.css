@@ -29,7 +29,7 @@ main p:not(:last-of-type) {
 }
 
 main .content a {
-  @apply hover:underline underline-offset-4
+  @apply hover:text-tangerine transition-colors !no-underline
 }
 
 main .content p + ul {
