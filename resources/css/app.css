@@ -45,6 +45,14 @@ main .content li:not(.theme-box-white li) {
   @apply list-image-tangerine list-item list-outside py-2 pl-6 mb-3 ml-18 leading-[1.4]
 }
 
+main table td {
+  @apply align-top py-3 !text-sm
+}
+
+main table td:first-child {
+  @apply pr-10
+}
+
 .collapsible ul {
   @apply mb-20
 }

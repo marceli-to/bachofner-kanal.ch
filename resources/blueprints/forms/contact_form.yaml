@@ -8,8 +8,9 @@ tabs:
             handle: subject
             field:
               options:
-                Serviceanfrage: Serviceanfrage
-                Reparatur: Reparatur
+                Offertanfrage: Offertanfrage
+                Reinigungstermin: Reinigungstermin
+                Kontaktaufnahme: Kontaktaufnahme
               taggable: false
               push_tags: false
               multiple: false
@@ -72,7 +73,9 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-              placeholder: 'Strasse / Nr.'
+              placeholder: 'Strasse / Nr.*'
+              validate:
+                - required
           -
             handle: zip_city
             field:
@@ -86,7 +89,9 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-              placeholder: 'PLZ / Ort'
+              placeholder: 'PLZ / Ort*'
+              validate:
+                - required
           -
             handle: phone
             field:
@@ -134,7 +139,7 @@ tabs:
           -
             handle: privacy
             field:
-              inline_label: 'Ich habe die Datenschutzerklärung gelesen und akzeptiere diese.'
+              inline_label: 'Ich habe die <a href="/datenschutzerklaerung">Datenschutzerklärung</a> gelesen und akzeptiere diese.'
               default: false
               type: toggle
               display: Datenschutz

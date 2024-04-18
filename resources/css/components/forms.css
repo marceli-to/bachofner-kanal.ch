@@ -3,7 +3,7 @@ input[type=email],
 input[type=tel],
 textarea,
 select {
-  @apply w-full py-15 px-10 bg-tangerine text-white border-none !ring-0 focus:outline-none focus:!ring-0 focus:text-white placeholder:text-white leading-none placeholder:leading-none
+  @apply w-full py-15 px-10 bg-tangerine text-white border-none !ring-0 focus:outline-none focus:!ring-0 focus:text-white placeholder:text-white
 }
 
 .has-error input[type=text],
@@ -11,7 +11,7 @@ select {
 .has-error input[type=tel],
 .has-error textarea,
 .has-error select {
-  @apply bg-red-600
+  @apply bg-jungle
 }
 
 .has-error label {
@@ -28,6 +28,10 @@ textarea {
 
 .checkboxes label {
   @apply flex items-center cursor-pointer leading-none
+}
+
+main .content .checkboxes label a {
+  @apply inline-block mx-5 !underline hover:!no-underline
 }
 
 .checkboxes label:hover {

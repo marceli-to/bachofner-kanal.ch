@@ -41,6 +41,7 @@ fields:
         - bold
         - removeformat
         - anchor
+        - table
       smart_typography: false
       save_html: false
       inline: false
