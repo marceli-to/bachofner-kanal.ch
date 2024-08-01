@@ -78,10 +78,14 @@ main .content li p,
 }
 
 .marker {
+  @apply bg-marker h-50 w-40 bg-no-repeat bg-contain cursor-pointer
+}
+
+/* .marker {
   @apply bg-marker;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
   height: 50px;
   width: 40px;
-}
+} */
