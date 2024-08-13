@@ -80,18 +80,18 @@ return [
         'class' => null,
 
         'rules' => [
-          'collections' => [
-            'pages' => [
-              'urls' => [
-                '/*',
-              ]
-            ],
-            'news' => [
-              'urls' => [
-                '/*',
-              ]
-            ],
-          ],
+          // 'collections' => [
+          //   'pages' => [
+          //     'urls' => [
+          //       '/*',
+          //     ]
+          //   ],
+          //   'news' => [
+          //     'urls' => [
+          //       '/*',
+          //     ]
+          //   ],
+          // ],
         ],
 
     ],
