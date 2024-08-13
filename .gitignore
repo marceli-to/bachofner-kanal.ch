@@ -26,3 +26,5 @@ public/assets
 /content
 resources/users
 users
+resources/forms
+storage/forms/contact_form
