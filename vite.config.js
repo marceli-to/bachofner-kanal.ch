@@ -10,6 +10,16 @@ export default defineConfig({
       fonts: resolve('resources/css/fonts')
     }
   },
+  server: {
+    hmr: {
+      host: 'localhost',
+    },
+    cors: {
+      origin: ['https://bachofner-kanal.ch.test'],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      credentials: true
+    },
+  },
   plugins: [
       laravel({
           input: [
