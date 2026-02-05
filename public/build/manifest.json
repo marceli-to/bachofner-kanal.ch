@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-2aa9ecc3.css",
+    "file": "assets/app-da97d2db.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -13,11 +13,11 @@
     "src": "resources/css/fonts/SyntaxProBlack/font.woff2"
   },
   "resources/css/fonts/SyntaxProRoman/font.woff": {
-    "file": "assets/font-8957c5fc.woff",
+    "file": "assets/font-502a8776.woff",
     "src": "resources/css/fonts/SyntaxProRoman/font.woff"
   },
   "resources/css/fonts/SyntaxProRoman/font.woff2": {
-    "file": "assets/font-6c196829.woff2",
+    "file": "assets/font-0f0e2d76.woff2",
     "src": "resources/css/fonts/SyntaxProRoman/font.woff2"
   },
   "resources/img/bullet-tangerine.svg": {
