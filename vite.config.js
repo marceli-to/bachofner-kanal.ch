@@ -15,7 +15,7 @@ export default defineConfig({
       host: 'localhost',
     },
     cors: {
-      origin: ['https://bachofner-kanal.ch.test'],
+      origin: ['https://bachofner-kanal.ch.test', 'https://www.bachofner-kanal.ch.test'],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       credentials: true
     },
